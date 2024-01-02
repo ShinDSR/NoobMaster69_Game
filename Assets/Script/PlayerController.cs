@@ -6,6 +6,11 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+
+    }
+
+    private void FixedUpdate()
+    {
         // Get input from the player
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
@@ -15,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
 
         // Move the object
         MoveObject(movement);
+        
     }
 
     void MoveObject(Vector3 movement)
